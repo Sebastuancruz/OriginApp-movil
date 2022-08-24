@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/scrollView7" >
+
+        <LinearLayout
+            android:scrollbarAlwaysDrawVerticalTrack="true"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#ffffff"
+            android:scrollIndicators="right"
+            android:layout_margin="15dp">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#ffffff"
+                android:weightSum="1"
+                android:layout_margin="15dp">
+
+                <ImageView
+                    android:layout_width="410dp"
+                    android:layout_height="160dp"
+                    android:id="@+id/imageView" android:src="@drawable/miperfil"
+                    android:layout_gravity="center"
+                    android:contentDescription="TODO" />
+
+            </LinearLayout>
+
+            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:orientation="horizontal" android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+
+            </LinearLayout>
+
+            <EditText android:id="@+id/alias"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/usuario"
+                android:hint="  Alias"
+                android:textColorHint="#CFCFCF"
+                android:inputType="text" android:backgroundTint="#2e556c"/>
+
+            <EditText android:id="@+id/registro_mail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/correo"
+                android:hint="  Correo"
+                android:textColorHint="#CFCFCF"
+                android:inputType="text|textEmailAddress" android:backgroundTint="#2e556c"/>
+
+            <EditText android:id="@+id/registro_fecha"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/calendario"
+                android:hint="  Fecha de nacimiento"
+                android:textColorHint="#CFCFCF"
+
+                android:focusable="false"
+                android:clickable="true"
+                android:maxLines="1"
+                android:inputType="date" android:backgroundTint="#2e556c"/>
+
+
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_column="0"
+                android:layout_span="2"
+                android:baselineAligned="true"
+                android:clickable="false"
+                android:measureWithLargestChild="false"
+                android:transitionGroup="false"
+                android:touchscreenBlocksFocus="false" android:orientation="horizontal"
+                android:layout_gravity="center_horizontal|left"
+                android:id="@+id/sexo"
+                android:gravity="center">
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Hombre"
+                    android:id="@+id/hombre"
+                    android:layout_gravity="center_horizontal|left"
+                    android:textColorHint="#CFCFCF"
+                    android:textColor="#FFBDBDBD"
+                    android:textSize="18dp"
+                    android:layout_marginRight="40dp" />
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Mujer"
+                    android:id="@+id/Mujer"
+                    android:layout_gravity="center_horizontal|right"
+                    android:textColorHint="#CFCFCF"
+                    android:textColor="#bdbdbd"
+                    android:textSize="18dp" />
+            </RadioGroup>
+            <EditText android:id="@+id/registro_contrasena"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/contrasena"
+                android:hint="  Contraseña"
+                android:textColorHint="#CFCFCF"
+                android:inputType="textPassword" android:backgroundTint="#2e556c"
+                />
+
+
+            <EditText android:id="@+id/registro_contrasena2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/contrasena"
+                android:hint="  Repita la contraseña"
+                android:textColorHint="#CFCFCF"
+                android:inputType="text|textPassword" android:backgroundTint="#2e556c"/>
+
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Registrar"
+                android:id="@+id/button9"
+                android:layout_gravity="center_horizontal"
+
+                android:textColor="#ffffff"
+                android:onClick="registrar" android:layout_marginLeft="40dp"
+                android:layout_marginRight="40dp" android:shadowRadius="50" android:background="@drawable/button_background"
+                android:layout_marginTop="10dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/error"
+                android:layout_gravity="center_horizontal"
+                android:textColor="#f70202"
+                android:textAlignment="center" />
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
