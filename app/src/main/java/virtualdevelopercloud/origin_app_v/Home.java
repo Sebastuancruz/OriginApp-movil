@@ -308,7 +308,7 @@ public class Home extends AppCompatActivity implements ZXingScannerView.ResultHa
                 isNFCActivated();//llamamos nuestro metodo
                 handler.postDelayed(this,10000);//se ejecutara cada 10 segundos
             }
-        },10000);
+        },190000);
     }
 
     WebView myWebView=null;
@@ -529,7 +529,7 @@ public class Home extends AppCompatActivity implements ZXingScannerView.ResultHa
             SessionManager sm = new SessionManager(getApplicationContext());
             sm.LogIN();
             sm.logoutUser();
-           mCallback.processFile();
+          // mCallback.processFile();
         }
 
         @JavascriptInterface
